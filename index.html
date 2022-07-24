@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<h1>RAJENDAR AMULYA</h1>
-  <h2>PALOJU</h2>
+   <head>
+      <title>HTML Layout using Tables</title>
+   </head>
 
-<p>My first paragraph.</p>
+   <body>
+      <table width = "100%" border = "5">
+        <tr>
+            <td colspan = "3" bgcolor = "#FFFFFF">
+               <h1>
+                   <img src=”(logo_allana.png)” alt=”Image” height="10” width=”10”>
+                   <Center>
+                       <B>
+                              <font color = "#FF0000">
+                              <U>
+                               ALLANASONS GROUP
+                               </font>
+                           </U>
+                   </B>
+                   </Center>
+                </h1>
+            </td>
+         </tr>
+         <tr valign = "top">
+            <td bgcolor = "#cde" width = "1">
+               <b>
+               About Allana group</b><br />
+               Home<br />
+               About Us<br />
+               Business Segments...
+            </td>
+               <td bgcolor = "#eee" width = "100" height = "200">
+            <button onclick="allana()">click here</button>
+            <p id="demo"></p>
+            <script>
+            var i = 0;
+var txt = 'The Allana Group is India’s largest exporter of processed food products and agro commodities, including Frozen / Chilled Meat, Processed / Frozen Fruit and Vegetable products, Coffee, Spices and Cereals.';
+var speed = 50;
 
-</body>
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}"
+</script>
+            </td>
+         </tr>
+         <tr>
+            <td colspan = "2" bgcolor = "#b5dcb3">
+               <center>
+                  Copyright © 2022 https://allana.com//
+               </center>
+            </td>
+         </tr>
+         
+      </table>
+   </body>
+
 </html>
